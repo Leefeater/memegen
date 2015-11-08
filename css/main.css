@@ -2,22 +2,28 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to right, #F0ECF2, #FFF, #F0ECF2);
 }
 
 .header {
-  background: #ffe780;
+  background: linear-gradient(#CC3399,#fff,#CC3399);
+  width:98%;
   margin-bottom: 40px;
   padding: 10px 0;
-}
-
-.header img {
-  width: 90px;
-  margin: -10px 10px 0 0;
+  text-align:center;
+  border-radius:10px;
 }
 
 .header h1 {
   margin: 0;
   display: inline-block;
+  color:#ffe780;
+  font-weight:700;
+  text-shadow:.3px .8px #eee,
+              .4px .9px #ddd,
+              .5px 1px #ccc,
+              .6px 1.1px #bbb,
+              .7px 1.2px #aaa;
 }
 
 .meme {
@@ -64,13 +70,116 @@ html, body {
 .tool input {
   border-radius: 0;
   border: 0;
-  border-bottom: 5px solid #ff7171;
+  border-bottom: 5px solid #ffe780;
   box-shadow: none;
 }
 
 input[type="text"]:focus {
   border: 0;
-  border-bottom: 5px solid #ff7171;
+  border-bottom: 2px solid #ffe780;
   outline: 0;
   box-shadow: none;
+}
+/*controls section*/
+.wrapper {
+  margin:20px auto;
+  text-align:center;
+}
+
+/*Color Changer section*/
+.color-changer {
+  display:none;
+  margin:10px auto;
+  height:300px;
+  width:250px;
+  border:1px solid #ccc;
+  text-align:center;
+  padding:10px;
+  box-shadow:-.5px .5px #bbb,
+             -.6px .6px #aaa,
+             -.7px .7px #999;
+}
+.color-sel {
+  float:left;
+  display:inline-block;
+  height:15px;
+  width:15px;
+  margin:10px;
+  border:1px solid #666;
+  cursor:pointer;
+}
+
+.black {
+  background:#000;
+}
+.dark-gray {
+  background:#373636;
+}
+.light-gray {
+  background:#7a7979;
+}
+.off-white {
+  background:#cbc7c7;
+}
+.white {
+  background:#fff;
+}
+.red {
+  background:#ff030b;
+}
+.maroon {
+  background:#910005;
+}
+.orange {
+  background:#FF6600;
+}
+.yellow {
+  background:#FFFF00;
+}
+.peach {
+  background:#FFFF99;
+}
+.dark-blue {
+  background:#003366;
+}
+.blue {
+  background:#0000FF;
+}
+.dark-green {
+  background:#003300;
+}
+.green {
+  background:#009900;
+}
+.light-blue {
+  background:#99CCFF;
+}
+.dark-purple {
+  background:#660066;
+}
+.purple {
+  background:#CC0099;
+}
+.dark-pink {
+  background:#FF0066;
+}
+.pink {
+  background:#FF41C0;
+}
+.light-pink {
+  background:#FFADE4;
+}
+/*Font Size Editor */
+.font-size-editor {
+  display:none;
+  margin:10px auto;
+  width:250px;
+  border:1px solid #ccc;
+  text-align:center;
+  padding:10px;
+  box-shadow:-.5px .5px #bbb,
+             -.6px .6px #aaa,
+             -.7px .7px #999;
+.bottom-font-size {
+  margin-top:35px;
 }

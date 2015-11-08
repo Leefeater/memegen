@@ -1,29 +1,42 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Nate Hargitt">
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div class="header">
+    <div class="header container">
       <div class="container">
-        <h1>DIY MEME GENERATOR</h1>
+        <h1>MEME GENESIS</h1>
       </div>
     </div>
     <div class="main">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-offset-3 col-md-6">
             
             <div class="meme thumbnail">
-              <img src="img/charizard.jpg">
-              <h1 class="top-caption">When your girl</h1>
-              <h1 class="bottom-caption">asks if you still like pokemon</h1>
+              <img src="img/super-baby.jpg">
+              <h1 class="top-caption">When your home alone</h1>
+              <h1 class="bottom-caption">and your song comes on</h1>
             </div>
-
           </div>
-          <div class="col-md-6">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-offset-1 col-md-6">
             
             <div class="tool">
               <h2>Create a meme</h2>
@@ -44,11 +57,81 @@
             </div>
 
           </div>
+<!--Meme Editor Section -->
+<div class="col-md-offset-1 col-md-3">
+    <div class="controls">
+      <button id="change-color" class="btn btn-info">Change Color</button>
+      <button id="change-font-size" class="btn btn-info">Change Font Size</button>
+    </div>
+    <!--Change Color -->
+        <div class="color-changer">
+        <h2>Change Color</h2>
+          <div class="color-sel black">
+          </div>
+          <div class="color-sel dark-gray">
+          </div>
+          <div class="color-sel light-gray">
+          </div>
+          <div class="color-sel off-white">
+          </div>
+          <div class="color-sel white">
+          </div>
+          <div class="color-sel maroon">
+          </div>
+          <div class="color-sel red">
+          </div>
+          <div class="color-sel orange">
+          </div>
+          <div class="color-sel yellow">
+          </div>
+          <div class="color-sel peach">
+          </div>
+          <div class="color-sel dark-blue">
+          </div>
+          <div class="color-sel blue">
+          </div>
+          <div class="color-sel light-blue">
+          </div>
+          <div class="color-sel dark-green">
+          </div>
+          <div class="color-sel green">
+          </div>
+           <div class="color-sel dark-purple">
+          </div>
+          <div class="color-sel purple">
+          </div>
+          <div class="color-sel dark-pink">
+          </div>
+          <div class="color-sel pink">
+          </div>
+          <div class="color-sel light-pink">
+          </div>
+    </div>
+    <!--Edit the font size-->
+    <div class="font-size-editor">
+        <div class="top-font-size">
+          <h2>Top text</h2>
+          <button id="top-plus" class="btn btn-info">+ Font Size</button>
+          <button id="top-minus" class="btn btn-info">- Font Size</button>
+        </div>
+        <div class="bottom-font-size">
+          <h2>Bottom text</h2>
+          <button id="bottom-plus" class="btn btn-info">+ Font Size</button>
+          <button id="bottom-minus" class="btn btn-info">- Font Size</button>
         </div>
       </div>
     </div>
-
+  </div>
+</div>
     <script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script>
+    $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+    })
+    </script>
+    
   </body>
 </html>
