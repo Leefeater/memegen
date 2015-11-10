@@ -8,7 +8,7 @@ html, body {
 .header {
   background: linear-gradient(#CC3399,#fff,#CC3399);
   width:98%;
-  margin-bottom: 40px;
+  margin:0 auto 40px;
   padding: 10px 0;
   text-align:center;
   border-radius:10px;
@@ -182,4 +182,11 @@ input[type="text"]:focus {
              -.7px .7px #999;
 .bottom-font-size {
   margin-top:35px;
+}
+
+/*Media Queries*/
+@media (max-width: 572px) {
+  .bottom-caption{
+    font-size:500px;
+  }
 }

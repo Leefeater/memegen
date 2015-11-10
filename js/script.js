@@ -1,4 +1,5 @@
 // text adder/image adder
+
 var textAdd = function() {
   $('#top-text').keyup(function() {
 	if($('#top-text').val().length > 0) {
@@ -68,4 +69,4 @@ var toggleBtn = function() {
 });
 };
 
-$(document).ready(textAdd, changeColor(), changeFontsize(), toggleBtn());
+$(document).ready(textAdd, changeColor(), toggleBtn());

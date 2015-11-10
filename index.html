@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Nate Hargitt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <!-- Latest compiled and minified CSS -->
@@ -15,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div class="header container">
+    <div class="header">
       <div class="container">
         <h1>MEME GENESIS</h1>
       </div>
@@ -123,15 +124,29 @@
     </div>
   </div>
 </div>
+<br>
+<br>
+<input type="file" id="myFile">
     <script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script>
-    $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-    })
-    </script>
-    
+       <script type="text/javascript"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myFile");
+    x.disabled = true;
+}
+function imgUpload() {
+  var y = $('#myFile').val();
+ if( y.length > 0 ) {
+      $("img").attr("src", y.val() );
+  }else {
+    $("img").attr("src", 'img/charizard.jpg');
+}
+}
+</script>
+
+   </script>
   </body>
 </html>
